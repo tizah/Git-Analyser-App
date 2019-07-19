@@ -15,7 +15,7 @@ export default class Auth {
     this.auth0 = new auth0.WebAuth({
       domain: constants.REACT_APP_AUTH0_DOMAIN,
       clientID: constants.REACT_APP_AUTH0_CLIENT_ID,
-      redirectUri: "https://eloquent-visvesvaraya-a8b443.netlify.com/callback",
+      redirectUri: process.env.REACT_APP_AUTH0_CALLBACK_URL,
       responseType: "token id_token",
       scope: this.requestedScopes
     });
@@ -76,7 +76,7 @@ export default class Auth {
     this.userProfile = null;
     this.auth0.logout({
       clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
-      returnTo: "http://localhost:3000/"
+      returnTo: process.env.REACT_APP_AUTH0_CALLBACK_URL
     });
   };
 
