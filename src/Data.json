@@ -1,0 +1,16 @@
+{
+  "david": {
+    "name": "david",
+    "date": "7/15/2019",
+    "topic": "Learning React",
+    "timeSpent": "120min",
+    "commitesPerDay": "5"
+  },
+  "rowland": {
+    "name": "rowland",
+    "date": "7/15/2019",
+    "topic": "Learning React",
+    "timeSpent": "120min",
+    "commitesPerDay": "5"
+  }
+}
