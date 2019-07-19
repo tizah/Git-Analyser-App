@@ -15,7 +15,7 @@ export default class Auth {
     this.auth0 = new auth0.WebAuth({
       domain: constants.REACT_APP_AUTH0_DOMAIN,
       clientID: constants.REACT_APP_AUTH0_CLIENT_ID,
-      redirectUri: process.env.REACT_APP_AUTH0_CALLBACK_URL,
+      redirectUri: "https://mystifying-shockley-8407c3.netlify.com/callback",
       responseType: "token id_token",
       scope: this.requestedScopes
     });
